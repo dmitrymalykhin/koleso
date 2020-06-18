@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wheel_life.css">
+    <link rel="stylesheet" href="main_flat.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="wheel_life.js"></script>
+    <script src="ctxtextpath.js"></script>
+
+    <script>
+        var areas = [];
+
+        areas.push(['Здоровье и спорт', '97CC64', 11, 11]);
+        areas.push(['Деньги', '4569BC', 11, 11]);
+        areas.push(['Карьера / Бизнес', '2A8341', 11, 11]);
+        areas.push(['Окружение и друзья', 'F68D38', 11, 11]);
+        areas.push(['Любовь. Семья. Дети', 'EA527F', 11, 11]);
+        areas.push(['Личностный рост', '77B6E7', 11, 11]);
+        areas.push(['Хобби. Развлечения', 'FFD963', 11, 11]);
+        areas.push(['Духовность', 'A955B8', 11, 11]);
+
+        var settings = { areas: areas, beginGradShift: 90 };
+
+        var tempImgName = 'ta4c17go45s4c41p5ef87iqe6s';
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="page-wrap">
+            <div class="row">
+                <h1>Колесо баланса жизни</h1>
+                <p>
+                    Отметьте уровень удовлетворённости состоянием всех сфер жизни.
+                    От <span style="color: coral">1 балла – ужасно</span> до <span style="color: #0c9c0d;">10 баллов – всё супер</span>.
+                </p>
+                <div class="wheel-life-container"> <canvas id="wheel-life" width="1646" height="942"
+                    style="cursor: default;">Обновите</canvas>
+
+                    <div id="button-clear-areas"><a class="button tiny link secondary radius" href="#" target="_blank"><span
+                        class="icon-remove ico-lg"></span> &nbsp;очистить</a></div>
+                        <div id="button-download-wheel"><a class="button tiny success radius" href="#" rel="noopener nofollow"
+                            target="_blank"><span class="icon-download4 ico-x2"></span> скачать</a></div>
+
+                        </div>
+                        <div id="wheel-life-result" class="hide">
+                            <div class="result" style="display: none;"> <img class="arrow ico-flip-horizontal show-for-medium-up"
+                                src="arrow_down_share.png" alt="share">
+                                <h2>Отличное состояние: <span id="areas-good" class="font-success"></span></h2>
+                                <p>
+                                    Для баланса в жизни - обратите внимание на слабые сферы.
+                                </p>
+                                <p>
+                                    Если много стараетесь, в ущерб другим сферам - стоит ли продолжать усиливать дисбаланс?<br>
+                                    Часто это специальная мера, чтобы совершить прорыв в некоторых сферах, а в остальных "плыть по течению".
+                                    Анализируйте внимательно, изучите <a
+                                    href="">подсказки</a>.
+                                </p> <br>
+                                <h2>Сферы, требующие внимания: <span id="areas-bad" class="font-warning"></span></h2>
+                                <div id="recommendation-for-bad">
+                                    <p>
+                                        Изменения в этих сферах принесут <strong>максимальное улучшение в удовлетворённости жизнью.</strong>
+                                    </p>
+                                </div>
+                                <div class="panel callout">
+                                    <p>
+                                        Сделайте более глубокий анализ сфер жизни с помощью интерактивного курса
+                                        <a href="" class="font-alert">Карта Жизни</a>.
+                                        Соберите более 50 значимых фактов, выберите ключевые факторы и составьте эффективный план улучшения.
+                                    </p>
+                                    <ul class="clearing-thumbs">
+                                        <li class="wFull text-center">
+                                            <figure class="img" style="margin:0"> 
+                                                <figcaption class="font-small"><i>Персональная карта сферы жизни Здоровья.</i></figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul> <br>
+                                    <p class="text-center"><a href="" class="button no-margin">Найти
+                                    фокус и поставить эффективные цели</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </body>
+
+        </html>
